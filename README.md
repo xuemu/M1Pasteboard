@@ -8,7 +8,9 @@ This is a simple solution to the clipping board problem of Apple silicon MAC IOS
 
 ## Introduction
 * PasteboardServer is a mac app, it supports startup and custom HTTP ports
-![](./screenshot1.png)
+<center>
+	<img src="./screenshot1.png" width="400"><br/>
+</center>
 
 ## Inspire
 [CocoaHTTPServer](https://github.com/robbiehanson/CocoaHTTPServer)
