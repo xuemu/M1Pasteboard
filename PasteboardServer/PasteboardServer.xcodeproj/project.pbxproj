@@ -1,0 +1,781 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EC4D5BD12897B38C00DE215F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EC4D5BD02897B38C00DE215F /* AppDelegate.m */; };
+		EC4D5BD42897B38C00DE215F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EC4D5BD32897B38C00DE215F /* ViewController.m */; };
+		EC4D5BD62897B38C00DE215F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC4D5BD52897B38C00DE215F /* Assets.xcassets */; };
+		EC4D5BD92897B38C00DE215F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC4D5BD72897B38C00DE215F /* Main.storyboard */; };
+		EC4D5BDB2897B38C00DE215F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EC4D5BDA2897B38C00DE215F /* main.m */; };
+		EC4D5BE22897B3E500DE215F /* PasteboardServerHelper.app in CopyFiles */ = {isa = PBXBuildFile; fileRef = EC4D5BCD2897B38C00DE215F /* PasteboardServerHelper.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		EC4D5BE52897BA9700DE215F /* ServiceManagement.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC4D5BE42897BA9700DE215F /* ServiceManagement.framework */; };
+		EC5C7A662888FBB3004E56FF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EC5C7A652888FBB3004E56FF /* AppDelegate.m */; };
+		EC5C7A692888FBB3004E56FF /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EC5C7A682888FBB3004E56FF /* ViewController.m */; };
+		EC5C7A6B2888FBB4004E56FF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC5C7A6A2888FBB4004E56FF /* Assets.xcassets */; };
+		EC5C7A6E2888FBB4004E56FF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC5C7A6C2888FBB4004E56FF /* Main.storyboard */; };
+		EC5C7A702888FBB4004E56FF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EC5C7A6F2888FBB4004E56FF /* main.m */; };
+		EC5C7AB92888FC17004E56FF /* HTTPErrorResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = EC5C7A802888FC17004E56FF /* HTTPErrorResponse.m */; };
+		EC5C7ABA2888FC17004E56FF /* HTTPDataResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = EC5C7A812888FC17004E56FF /* HTTPDataResponse.m */; };
+		EC5C7ABB2888FC17004E56FF /* HTTPDynamicFileResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = EC5C7A832888FC17004E56FF /* HTTPDynamicFileResponse.m */; };
+		EC5C7ABC2888FC17004E56FF /* HTTPFileResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = EC5C7A842888FC17004E56FF /* HTTPFileResponse.m */; };
+		EC5C7ABD2888FC17004E56FF /* HTTPAsyncFileResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = EC5C7A852888FC17004E56FF /* HTTPAsyncFileResponse.m */; };
+		EC5C7ABE2888FC17004E56FF /* HTTPRedirectResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = EC5C7A862888FC17004E56FF /* HTTPRedirectResponse.m */; };
+		EC5C7ABF2888FC17004E56FF /* HTTPMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = EC5C7A8C2888FC17004E56FF /* HTTPMessage.m */; };
+		EC5C7AC02888FC17004E56FF /* HTTPConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = EC5C7A8D2888FC17004E56FF /* HTTPConnection.m */; };
+		EC5C7AC12888FC17004E56FF /* WebSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = EC5C7A8E2888FC17004E56FF /* WebSocket.m */; };
+		EC5C7AC22888FC17004E56FF /* MultipartMessageHeaderField.m in Sources */ = {isa = PBXBuildFile; fileRef = EC5C7A932888FC17004E56FF /* MultipartMessageHeaderField.m */; };
+		EC5C7AC32888FC17004E56FF /* MultipartFormDataParser.m in Sources */ = {isa = PBXBuildFile; fileRef = EC5C7A942888FC17004E56FF /* MultipartFormDataParser.m */; };
+		EC5C7AC42888FC17004E56FF /* MultipartMessageHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = EC5C7A952888FC17004E56FF /* MultipartMessageHeader.m */; };
+		EC5C7AC52888FC17004E56FF /* HTTPAuthenticationRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = EC5C7A972888FC17004E56FF /* HTTPAuthenticationRequest.m */; };
+		EC5C7AC62888FC17004E56FF /* DDNumber.m in Sources */ = {isa = PBXBuildFile; fileRef = EC5C7A992888FC17004E56FF /* DDNumber.m */; };
+		EC5C7AC72888FC17004E56FF /* DDData.m in Sources */ = {isa = PBXBuildFile; fileRef = EC5C7A9A2888FC17004E56FF /* DDData.m */; };
+		EC5C7AC82888FC17004E56FF /* DDRange.m in Sources */ = {isa = PBXBuildFile; fileRef = EC5C7A9D2888FC17004E56FF /* DDRange.m */; };
+		EC5C7AC92888FC17004E56FF /* HTTPServer.m in Sources */ = {isa = PBXBuildFile; fileRef = EC5C7A9F2888FC17004E56FF /* HTTPServer.m */; };
+		EC5C7ACA2888FC17004E56FF /* DDTTYLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = EC5C7AA22888FC17004E56FF /* DDTTYLogger.m */; };
+		EC5C7ACB2888FC17004E56FF /* DDASLLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = EC5C7AA52888FC17004E56FF /* DDASLLogger.m */; };
+		EC5C7ACC2888FC17004E56FF /* ContextFilterLogFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = EC5C7AAA2888FC17004E56FF /* ContextFilterLogFormatter.m */; };
+		EC5C7ACD2888FC17004E56FF /* DispatchQueueLogFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = EC5C7AAB2888FC17004E56FF /* DispatchQueueLogFormatter.m */; };
+		EC5C7ACE2888FC17004E56FF /* README.txt in Resources */ = {isa = PBXBuildFile; fileRef = EC5C7AAC2888FC17004E56FF /* README.txt */; };
+		EC5C7ACF2888FC17004E56FF /* DDLog.m in Sources */ = {isa = PBXBuildFile; fileRef = EC5C7AAD2888FC17004E56FF /* DDLog.m */; };
+		EC5C7AD12888FC17004E56FF /* DDAbstractDatabaseLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = EC5C7AB02888FC17004E56FF /* DDAbstractDatabaseLogger.m */; };
+		EC5C7AD22888FC17004E56FF /* DDFileLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = EC5C7AB12888FC17004E56FF /* DDFileLogger.m */; };
+		EC5C7AD32888FC17004E56FF /* GCDAsyncSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = EC5C7AB42888FC17004E56FF /* GCDAsyncSocket.m */; };
+		EC5C7AD52888FC17004E56FF /* MyHTTPConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = EC5C7AB82888FC17004E56FF /* MyHTTPConnection.m */; };
+		EC5C7AD928890D06004E56FF /* SettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EC5C7AD828890D06004E56FF /* SettingViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		EC4D5BE12897B3CE00DE215F /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = Contents/Library/LoginItems;
+			dstSubfolderSpec = 1;
+			files = (
+				EC4D5BE22897B3E500DE215F /* PasteboardServerHelper.app in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		EC4D5BCD2897B38C00DE215F /* PasteboardServerHelper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PasteboardServerHelper.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC4D5BCF2897B38C00DE215F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		EC4D5BD02897B38C00DE215F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		EC4D5BD22897B38C00DE215F /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		EC4D5BD32897B38C00DE215F /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		EC4D5BD52897B38C00DE215F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EC4D5BD82897B38C00DE215F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EC4D5BDA2897B38C00DE215F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		EC4D5BDC2897B38C00DE215F /* PasteboardServerHelper.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = PasteboardServerHelper.entitlements; sourceTree = "<group>"; };
+		EC4D5BE02897B3C000DE215F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		EC4D5BE42897BA9700DE215F /* ServiceManagement.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ServiceManagement.framework; path = System/Library/Frameworks/ServiceManagement.framework; sourceTree = SDKROOT; };
+		EC5C7A612888FBB3004E56FF /* PasteboardServer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PasteboardServer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC5C7A642888FBB3004E56FF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		EC5C7A652888FBB3004E56FF /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		EC5C7A672888FBB3004E56FF /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		EC5C7A682888FBB3004E56FF /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		EC5C7A6A2888FBB4004E56FF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EC5C7A6D2888FBB4004E56FF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EC5C7A6F2888FBB4004E56FF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		EC5C7A712888FBB4004E56FF /* PasteboardServer.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = PasteboardServer.entitlements; sourceTree = "<group>"; };
+		EC5C7A792888FC17004E56FF /* HTTPConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTTPConnection.h; sourceTree = "<group>"; };
+		EC5C7A7A2888FC17004E56FF /* HTTPLogging.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTTPLogging.h; sourceTree = "<group>"; };
+		EC5C7A7B2888FC17004E56FF /* HTTPMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTTPMessage.h; sourceTree = "<group>"; };
+		EC5C7A7C2888FC17004E56FF /* WebSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebSocket.h; sourceTree = "<group>"; };
+		EC5C7A7D2888FC17004E56FF /* HTTPAuthenticationRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTTPAuthenticationRequest.h; sourceTree = "<group>"; };
+		EC5C7A7F2888FC17004E56FF /* HTTPAsyncFileResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTTPAsyncFileResponse.h; sourceTree = "<group>"; };
+		EC5C7A802888FC17004E56FF /* HTTPErrorResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTTPErrorResponse.m; sourceTree = "<group>"; };
+		EC5C7A812888FC17004E56FF /* HTTPDataResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTTPDataResponse.m; sourceTree = "<group>"; };
+		EC5C7A822888FC17004E56FF /* HTTPRedirectResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTTPRedirectResponse.h; sourceTree = "<group>"; };
+		EC5C7A832888FC17004E56FF /* HTTPDynamicFileResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTTPDynamicFileResponse.m; sourceTree = "<group>"; };
+		EC5C7A842888FC17004E56FF /* HTTPFileResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTTPFileResponse.m; sourceTree = "<group>"; };
+		EC5C7A852888FC17004E56FF /* HTTPAsyncFileResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTTPAsyncFileResponse.m; sourceTree = "<group>"; };
+		EC5C7A862888FC17004E56FF /* HTTPRedirectResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTTPRedirectResponse.m; sourceTree = "<group>"; };
+		EC5C7A872888FC17004E56FF /* HTTPDataResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTTPDataResponse.h; sourceTree = "<group>"; };
+		EC5C7A882888FC17004E56FF /* HTTPErrorResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTTPErrorResponse.h; sourceTree = "<group>"; };
+		EC5C7A892888FC17004E56FF /* HTTPFileResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTTPFileResponse.h; sourceTree = "<group>"; };
+		EC5C7A8A2888FC17004E56FF /* HTTPDynamicFileResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTTPDynamicFileResponse.h; sourceTree = "<group>"; };
+		EC5C7A8B2888FC17004E56FF /* HTTPServer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTTPServer.h; sourceTree = "<group>"; };
+		EC5C7A8C2888FC17004E56FF /* HTTPMessage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTTPMessage.m; sourceTree = "<group>"; };
+		EC5C7A8D2888FC17004E56FF /* HTTPConnection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTTPConnection.m; sourceTree = "<group>"; };
+		EC5C7A8E2888FC17004E56FF /* WebSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebSocket.m; sourceTree = "<group>"; };
+		EC5C7A8F2888FC17004E56FF /* HTTPResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTTPResponse.h; sourceTree = "<group>"; };
+		EC5C7A912888FC17004E56FF /* MultipartFormDataParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MultipartFormDataParser.h; sourceTree = "<group>"; };
+		EC5C7A922888FC17004E56FF /* MultipartMessageHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MultipartMessageHeader.h; sourceTree = "<group>"; };
+		EC5C7A932888FC17004E56FF /* MultipartMessageHeaderField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MultipartMessageHeaderField.m; sourceTree = "<group>"; };
+		EC5C7A942888FC17004E56FF /* MultipartFormDataParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MultipartFormDataParser.m; sourceTree = "<group>"; };
+		EC5C7A952888FC17004E56FF /* MultipartMessageHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MultipartMessageHeader.m; sourceTree = "<group>"; };
+		EC5C7A962888FC17004E56FF /* MultipartMessageHeaderField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MultipartMessageHeaderField.h; sourceTree = "<group>"; };
+		EC5C7A972888FC17004E56FF /* HTTPAuthenticationRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTTPAuthenticationRequest.m; sourceTree = "<group>"; };
+		EC5C7A992888FC17004E56FF /* DDNumber.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDNumber.m; sourceTree = "<group>"; };
+		EC5C7A9A2888FC17004E56FF /* DDData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDData.m; sourceTree = "<group>"; };
+		EC5C7A9B2888FC17004E56FF /* DDRange.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDRange.h; sourceTree = "<group>"; };
+		EC5C7A9C2888FC17004E56FF /* DDNumber.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDNumber.h; sourceTree = "<group>"; };
+		EC5C7A9D2888FC17004E56FF /* DDRange.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDRange.m; sourceTree = "<group>"; };
+		EC5C7A9E2888FC17004E56FF /* DDData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDData.h; sourceTree = "<group>"; };
+		EC5C7A9F2888FC17004E56FF /* HTTPServer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTTPServer.m; sourceTree = "<group>"; };
+		EC5C7AA22888FC17004E56FF /* DDTTYLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDTTYLogger.m; sourceTree = "<group>"; };
+		EC5C7AA32888FC17004E56FF /* DDLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDLog.h; sourceTree = "<group>"; };
+		EC5C7AA42888FC17004E56FF /* DDAbstractDatabaseLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDAbstractDatabaseLogger.h; sourceTree = "<group>"; };
+		EC5C7AA52888FC17004E56FF /* DDASLLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDASLLogger.m; sourceTree = "<group>"; };
+		EC5C7AA62888FC17004E56FF /* DDFileLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDFileLogger.h; sourceTree = "<group>"; };
+		EC5C7AA82888FC17004E56FF /* ContextFilterLogFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContextFilterLogFormatter.h; sourceTree = "<group>"; };
+		EC5C7AA92888FC17004E56FF /* DispatchQueueLogFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DispatchQueueLogFormatter.h; sourceTree = "<group>"; };
+		EC5C7AAA2888FC17004E56FF /* ContextFilterLogFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContextFilterLogFormatter.m; sourceTree = "<group>"; };
+		EC5C7AAB2888FC17004E56FF /* DispatchQueueLogFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DispatchQueueLogFormatter.m; sourceTree = "<group>"; };
+		EC5C7AAC2888FC17004E56FF /* README.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.txt; sourceTree = "<group>"; };
+		EC5C7AAD2888FC17004E56FF /* DDLog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDLog.m; sourceTree = "<group>"; };
+		EC5C7AAF2888FC17004E56FF /* DDTTYLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDTTYLogger.h; sourceTree = "<group>"; };
+		EC5C7AB02888FC17004E56FF /* DDAbstractDatabaseLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDAbstractDatabaseLogger.m; sourceTree = "<group>"; };
+		EC5C7AB12888FC17004E56FF /* DDFileLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDFileLogger.m; sourceTree = "<group>"; };
+		EC5C7AB22888FC17004E56FF /* DDASLLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDASLLogger.h; sourceTree = "<group>"; };
+		EC5C7AB42888FC17004E56FF /* GCDAsyncSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDAsyncSocket.m; sourceTree = "<group>"; };
+		EC5C7AB62888FC17004E56FF /* GCDAsyncSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDAsyncSocket.h; sourceTree = "<group>"; };
+		EC5C7AB72888FC17004E56FF /* MyHTTPConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyHTTPConnection.h; sourceTree = "<group>"; };
+		EC5C7AB82888FC17004E56FF /* MyHTTPConnection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyHTTPConnection.m; sourceTree = "<group>"; };
+		EC5C7AD62888FC2C004E56FF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		EC5C7AD728890D05004E56FF /* SettingViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SettingViewController.h; sourceTree = "<group>"; };
+		EC5C7AD828890D06004E56FF /* SettingViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SettingViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EC4D5BCA2897B38C00DE215F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC5C7A5E2888FBB3004E56FF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC4D5BE52897BA9700DE215F /* ServiceManagement.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EC4D5BCE2897B38C00DE215F /* PasteboardServerHelper */ = {
+			isa = PBXGroup;
+			children = (
+				EC4D5BE02897B3C000DE215F /* Info.plist */,
+				EC4D5BCF2897B38C00DE215F /* AppDelegate.h */,
+				EC4D5BD02897B38C00DE215F /* AppDelegate.m */,
+				EC4D5BD22897B38C00DE215F /* ViewController.h */,
+				EC4D5BD32897B38C00DE215F /* ViewController.m */,
+				EC4D5BD52897B38C00DE215F /* Assets.xcassets */,
+				EC4D5BD72897B38C00DE215F /* Main.storyboard */,
+				EC4D5BDA2897B38C00DE215F /* main.m */,
+				EC4D5BDC2897B38C00DE215F /* PasteboardServerHelper.entitlements */,
+			);
+			path = PasteboardServerHelper;
+			sourceTree = "<group>";
+		};
+		EC4D5BE32897BA9600DE215F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EC4D5BE42897BA9700DE215F /* ServiceManagement.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EC5C7A582888FBB3004E56FF = {
+			isa = PBXGroup;
+			children = (
+				EC5C7A632888FBB3004E56FF /* PasteboardServer */,
+				EC4D5BCE2897B38C00DE215F /* PasteboardServerHelper */,
+				EC5C7A622888FBB3004E56FF /* Products */,
+				EC4D5BE32897BA9600DE215F /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		EC5C7A622888FBB3004E56FF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EC5C7A612888FBB3004E56FF /* PasteboardServer.app */,
+				EC4D5BCD2897B38C00DE215F /* PasteboardServerHelper.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EC5C7A632888FBB3004E56FF /* PasteboardServer */ = {
+			isa = PBXGroup;
+			children = (
+				EC5C7AD62888FC2C004E56FF /* Info.plist */,
+				EC5C7A772888FC17004E56FF /* HTTPServer */,
+				EC5C7AB72888FC17004E56FF /* MyHTTPConnection.h */,
+				EC5C7AB82888FC17004E56FF /* MyHTTPConnection.m */,
+				EC5C7A642888FBB3004E56FF /* AppDelegate.h */,
+				EC5C7A652888FBB3004E56FF /* AppDelegate.m */,
+				EC5C7A672888FBB3004E56FF /* ViewController.h */,
+				EC5C7A682888FBB3004E56FF /* ViewController.m */,
+				EC5C7A6A2888FBB4004E56FF /* Assets.xcassets */,
+				EC5C7A6C2888FBB4004E56FF /* Main.storyboard */,
+				EC5C7A6F2888FBB4004E56FF /* main.m */,
+				EC5C7A712888FBB4004E56FF /* PasteboardServer.entitlements */,
+				EC5C7AD728890D05004E56FF /* SettingViewController.h */,
+				EC5C7AD828890D06004E56FF /* SettingViewController.m */,
+			);
+			path = PasteboardServer;
+			sourceTree = "<group>";
+		};
+		EC5C7A772888FC17004E56FF /* HTTPServer */ = {
+			isa = PBXGroup;
+			children = (
+				EC5C7A782888FC17004E56FF /* Core */,
+				EC5C7AA02888FC17004E56FF /* Vendor */,
+			);
+			path = HTTPServer;
+			sourceTree = "<group>";
+		};
+		EC5C7A782888FC17004E56FF /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				EC5C7A792888FC17004E56FF /* HTTPConnection.h */,
+				EC5C7A7A2888FC17004E56FF /* HTTPLogging.h */,
+				EC5C7A7B2888FC17004E56FF /* HTTPMessage.h */,
+				EC5C7A7C2888FC17004E56FF /* WebSocket.h */,
+				EC5C7A7D2888FC17004E56FF /* HTTPAuthenticationRequest.h */,
+				EC5C7A7E2888FC17004E56FF /* Responses */,
+				EC5C7A8B2888FC17004E56FF /* HTTPServer.h */,
+				EC5C7A8C2888FC17004E56FF /* HTTPMessage.m */,
+				EC5C7A8D2888FC17004E56FF /* HTTPConnection.m */,
+				EC5C7A8E2888FC17004E56FF /* WebSocket.m */,
+				EC5C7A8F2888FC17004E56FF /* HTTPResponse.h */,
+				EC5C7A902888FC17004E56FF /* Mime */,
+				EC5C7A972888FC17004E56FF /* HTTPAuthenticationRequest.m */,
+				EC5C7A982888FC17004E56FF /* Categories */,
+				EC5C7A9F2888FC17004E56FF /* HTTPServer.m */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		EC5C7A7E2888FC17004E56FF /* Responses */ = {
+			isa = PBXGroup;
+			children = (
+				EC5C7A7F2888FC17004E56FF /* HTTPAsyncFileResponse.h */,
+				EC5C7A802888FC17004E56FF /* HTTPErrorResponse.m */,
+				EC5C7A812888FC17004E56FF /* HTTPDataResponse.m */,
+				EC5C7A822888FC17004E56FF /* HTTPRedirectResponse.h */,
+				EC5C7A832888FC17004E56FF /* HTTPDynamicFileResponse.m */,
+				EC5C7A842888FC17004E56FF /* HTTPFileResponse.m */,
+				EC5C7A852888FC17004E56FF /* HTTPAsyncFileResponse.m */,
+				EC5C7A862888FC17004E56FF /* HTTPRedirectResponse.m */,
+				EC5C7A872888FC17004E56FF /* HTTPDataResponse.h */,
+				EC5C7A882888FC17004E56FF /* HTTPErrorResponse.h */,
+				EC5C7A892888FC17004E56FF /* HTTPFileResponse.h */,
+				EC5C7A8A2888FC17004E56FF /* HTTPDynamicFileResponse.h */,
+			);
+			path = Responses;
+			sourceTree = "<group>";
+		};
+		EC5C7A902888FC17004E56FF /* Mime */ = {
+			isa = PBXGroup;
+			children = (
+				EC5C7A912888FC17004E56FF /* MultipartFormDataParser.h */,
+				EC5C7A922888FC17004E56FF /* MultipartMessageHeader.h */,
+				EC5C7A932888FC17004E56FF /* MultipartMessageHeaderField.m */,
+				EC5C7A942888FC17004E56FF /* MultipartFormDataParser.m */,
+				EC5C7A952888FC17004E56FF /* MultipartMessageHeader.m */,
+				EC5C7A962888FC17004E56FF /* MultipartMessageHeaderField.h */,
+			);
+			path = Mime;
+			sourceTree = "<group>";
+		};
+		EC5C7A982888FC17004E56FF /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				EC5C7A992888FC17004E56FF /* DDNumber.m */,
+				EC5C7A9A2888FC17004E56FF /* DDData.m */,
+				EC5C7A9B2888FC17004E56FF /* DDRange.h */,
+				EC5C7A9C2888FC17004E56FF /* DDNumber.h */,
+				EC5C7A9D2888FC17004E56FF /* DDRange.m */,
+				EC5C7A9E2888FC17004E56FF /* DDData.h */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
+		EC5C7AA02888FC17004E56FF /* Vendor */ = {
+			isa = PBXGroup;
+			children = (
+				EC5C7AA12888FC17004E56FF /* CocoaLumberjack */,
+				EC5C7AB32888FC17004E56FF /* CocoaAsyncSocket */,
+			);
+			path = Vendor;
+			sourceTree = "<group>";
+		};
+		EC5C7AA12888FC17004E56FF /* CocoaLumberjack */ = {
+			isa = PBXGroup;
+			children = (
+				EC5C7AA22888FC17004E56FF /* DDTTYLogger.m */,
+				EC5C7AA32888FC17004E56FF /* DDLog.h */,
+				EC5C7AA42888FC17004E56FF /* DDAbstractDatabaseLogger.h */,
+				EC5C7AA52888FC17004E56FF /* DDASLLogger.m */,
+				EC5C7AA62888FC17004E56FF /* DDFileLogger.h */,
+				EC5C7AA72888FC17004E56FF /* Extensions */,
+				EC5C7AAD2888FC17004E56FF /* DDLog.m */,
+				EC5C7AAF2888FC17004E56FF /* DDTTYLogger.h */,
+				EC5C7AB02888FC17004E56FF /* DDAbstractDatabaseLogger.m */,
+				EC5C7AB12888FC17004E56FF /* DDFileLogger.m */,
+				EC5C7AB22888FC17004E56FF /* DDASLLogger.h */,
+			);
+			path = CocoaLumberjack;
+			sourceTree = "<group>";
+		};
+		EC5C7AA72888FC17004E56FF /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				EC5C7AA82888FC17004E56FF /* ContextFilterLogFormatter.h */,
+				EC5C7AA92888FC17004E56FF /* DispatchQueueLogFormatter.h */,
+				EC5C7AAA2888FC17004E56FF /* ContextFilterLogFormatter.m */,
+				EC5C7AAB2888FC17004E56FF /* DispatchQueueLogFormatter.m */,
+				EC5C7AAC2888FC17004E56FF /* README.txt */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		EC5C7AB32888FC17004E56FF /* CocoaAsyncSocket */ = {
+			isa = PBXGroup;
+			children = (
+				EC5C7AB42888FC17004E56FF /* GCDAsyncSocket.m */,
+				EC5C7AB62888FC17004E56FF /* GCDAsyncSocket.h */,
+			);
+			path = CocoaAsyncSocket;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EC4D5BCC2897B38C00DE215F /* PasteboardServerHelper */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EC4D5BDF2897B38C00DE215F /* Build configuration list for PBXNativeTarget "PasteboardServerHelper" */;
+			buildPhases = (
+				EC4D5BC92897B38C00DE215F /* Sources */,
+				EC4D5BCA2897B38C00DE215F /* Frameworks */,
+				EC4D5BCB2897B38C00DE215F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PasteboardServerHelper;
+			productName = PasteboardServerHelper;
+			productReference = EC4D5BCD2897B38C00DE215F /* PasteboardServerHelper.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EC5C7A602888FBB3004E56FF /* PasteboardServer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EC5C7A742888FBB4004E56FF /* Build configuration list for PBXNativeTarget "PasteboardServer" */;
+			buildPhases = (
+				EC5C7A5D2888FBB3004E56FF /* Sources */,
+				EC5C7A5E2888FBB3004E56FF /* Frameworks */,
+				EC5C7A5F2888FBB3004E56FF /* Resources */,
+				EC4D5BE12897B3CE00DE215F /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PasteboardServer;
+			productName = PasteboardServer;
+			productReference = EC5C7A612888FBB3004E56FF /* PasteboardServer.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EC5C7A592888FBB3004E56FF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastUpgradeCheck = 1340;
+				TargetAttributes = {
+					EC4D5BCC2897B38C00DE215F = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
+					EC5C7A602888FBB3004E56FF = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
+				};
+			};
+			buildConfigurationList = EC5C7A5C2888FBB3004E56FF /* Build configuration list for PBXProject "PasteboardServer" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EC5C7A582888FBB3004E56FF;
+			productRefGroup = EC5C7A622888FBB3004E56FF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EC5C7A602888FBB3004E56FF /* PasteboardServer */,
+				EC4D5BCC2897B38C00DE215F /* PasteboardServerHelper */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EC4D5BCB2897B38C00DE215F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC4D5BD62897B38C00DE215F /* Assets.xcassets in Resources */,
+				EC4D5BD92897B38C00DE215F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC5C7A5F2888FBB3004E56FF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC5C7A6B2888FBB4004E56FF /* Assets.xcassets in Resources */,
+				EC5C7ACE2888FC17004E56FF /* README.txt in Resources */,
+				EC5C7A6E2888FBB4004E56FF /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EC4D5BC92897B38C00DE215F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC4D5BD42897B38C00DE215F /* ViewController.m in Sources */,
+				EC4D5BDB2897B38C00DE215F /* main.m in Sources */,
+				EC4D5BD12897B38C00DE215F /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC5C7A5D2888FBB3004E56FF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC5C7AC42888FC17004E56FF /* MultipartMessageHeader.m in Sources */,
+				EC5C7ACD2888FC17004E56FF /* DispatchQueueLogFormatter.m in Sources */,
+				EC5C7A692888FBB3004E56FF /* ViewController.m in Sources */,
+				EC5C7AC22888FC17004E56FF /* MultipartMessageHeaderField.m in Sources */,
+				EC5C7AC72888FC17004E56FF /* DDData.m in Sources */,
+				EC5C7A702888FBB4004E56FF /* main.m in Sources */,
+				EC5C7ABB2888FC17004E56FF /* HTTPDynamicFileResponse.m in Sources */,
+				EC5C7AD22888FC17004E56FF /* DDFileLogger.m in Sources */,
+				EC5C7ACC2888FC17004E56FF /* ContextFilterLogFormatter.m in Sources */,
+				EC5C7ABC2888FC17004E56FF /* HTTPFileResponse.m in Sources */,
+				EC5C7AD52888FC17004E56FF /* MyHTTPConnection.m in Sources */,
+				EC5C7A662888FBB3004E56FF /* AppDelegate.m in Sources */,
+				EC5C7ACF2888FC17004E56FF /* DDLog.m in Sources */,
+				EC5C7AD32888FC17004E56FF /* GCDAsyncSocket.m in Sources */,
+				EC5C7AC12888FC17004E56FF /* WebSocket.m in Sources */,
+				EC5C7AC32888FC17004E56FF /* MultipartFormDataParser.m in Sources */,
+				EC5C7ABA2888FC17004E56FF /* HTTPDataResponse.m in Sources */,
+				EC5C7AC02888FC17004E56FF /* HTTPConnection.m in Sources */,
+				EC5C7ACA2888FC17004E56FF /* DDTTYLogger.m in Sources */,
+				EC5C7AB92888FC17004E56FF /* HTTPErrorResponse.m in Sources */,
+				EC5C7ACB2888FC17004E56FF /* DDASLLogger.m in Sources */,
+				EC5C7AC82888FC17004E56FF /* DDRange.m in Sources */,
+				EC5C7AC92888FC17004E56FF /* HTTPServer.m in Sources */,
+				EC5C7AC62888FC17004E56FF /* DDNumber.m in Sources */,
+				EC5C7ABF2888FC17004E56FF /* HTTPMessage.m in Sources */,
+				EC5C7AD12888FC17004E56FF /* DDAbstractDatabaseLogger.m in Sources */,
+				EC5C7ABD2888FC17004E56FF /* HTTPAsyncFileResponse.m in Sources */,
+				EC5C7ABE2888FC17004E56FF /* HTTPRedirectResponse.m in Sources */,
+				EC5C7AC52888FC17004E56FF /* HTTPAuthenticationRequest.m in Sources */,
+				EC5C7AD928890D06004E56FF /* SettingViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		EC4D5BD72897B38C00DE215F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EC4D5BD82897B38C00DE215F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		EC5C7A6C2888FBB4004E56FF /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EC5C7A6D2888FBB4004E56FF /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EC4D5BDD2897B38C00DE215F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = PasteboardServerHelper/PasteboardServerHelper.entitlements;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = UNS8RSTG96;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = PasteboardServerHelper/Info.plist;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSMainStoryboardFile = Main;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				MARKETING_VERSION = 1.1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.demo.PasteboardServerHelper;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+			};
+			name = Debug;
+		};
+		EC4D5BDE2897B38C00DE215F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = PasteboardServerHelper/PasteboardServerHelper.entitlements;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = UNS8RSTG96;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = PasteboardServerHelper/Info.plist;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSMainStoryboardFile = Main;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				MARKETING_VERSION = 1.1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.demo.PasteboardServerHelper;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+			};
+			name = Release;
+		};
+		EC5C7A722888FBB4004E56FF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 12.3;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		EC5C7A732888FBB4004E56FF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 12.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		EC5C7A752888FBB4004E56FF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = PasteboardServer/PasteboardServer.entitlements;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = PasteboardServer/Info.plist;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSMainStoryboardFile = Main;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.demo.PasteboardServer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+			};
+			name = Debug;
+		};
+		EC5C7A762888FBB4004E56FF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = PasteboardServer/PasteboardServer.entitlements;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = PasteboardServer/Info.plist;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSMainStoryboardFile = Main;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.demo.PasteboardServer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EC4D5BDF2897B38C00DE215F /* Build configuration list for PBXNativeTarget "PasteboardServerHelper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EC4D5BDD2897B38C00DE215F /* Debug */,
+				EC4D5BDE2897B38C00DE215F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EC5C7A5C2888FBB3004E56FF /* Build configuration list for PBXProject "PasteboardServer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EC5C7A722888FBB4004E56FF /* Debug */,
+				EC5C7A732888FBB4004E56FF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EC5C7A742888FBB4004E56FF /* Build configuration list for PBXNativeTarget "PasteboardServer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EC5C7A752888FBB4004E56FF /* Debug */,
+				EC5C7A762888FBB4004E56FF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EC5C7A592888FBB3004E56FF /* Project object */;
+}
